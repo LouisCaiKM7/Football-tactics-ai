@@ -15,8 +15,8 @@ import random
 
 
 def extract_frames_for_dataset(
-    video_dir: str = r"E:\0_projects\00_football_system\test",
-    output_dir: str = r"E:\0_projects\00_football_system\frames_dataset",
+    video_dir: str = "\video_resources",
+    output_dir: str = "\frames_dataset",
     frames_per_video: int = 100,
     frame_skip: int = 30,
     random_sample: bool = True,
@@ -124,7 +124,7 @@ def extract_frames_for_dataset(
     return total_extracted
 
 
-def check_dataset_status(output_dir: str = r"E:\0_projects\00_football_system\frames_dataset"):
+def check_dataset_status(output_dir: str = "\frames_dataset"):
     """Check the current status of the dataset."""
     output_dir = Path(output_dir)
     
@@ -163,8 +163,8 @@ def check_dataset_status(output_dir: str = r"E:\0_projects\00_football_system\fr
 if __name__ == "__main__":
     # Extract frames from all videos
     extract_frames_for_dataset(
-        video_dir=r"E:\0_projects\00_football_system\test",
-        output_dir=r"E:\0_projects\00_football_system\frames_dataset",
+        video_dir="\video_resources",
+        output_dir="\frames_dataset",
         frames_per_video=100,  # 100 frames per video = ~6300 total frames
         random_sample=True,
         seed=42

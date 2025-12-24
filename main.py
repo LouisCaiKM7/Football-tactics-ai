@@ -15,4 +15,4 @@ def test_video_cutter():
 
 
 if __name__ == '__main__':
-    print(os.cpu_count())
+    main()
