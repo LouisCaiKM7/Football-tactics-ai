@@ -6,3 +6,4 @@
 /.venv/
 /testing_videos/
 /video_resources/
+*.pyc
